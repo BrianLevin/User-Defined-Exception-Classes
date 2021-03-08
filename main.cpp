@@ -9,7 +9,8 @@
 using namespace std;
 
 int main() {
-    // test your code here
+     std::unique_ptr<Account> moes_account; // create two unique pointers
+    std::unique_ptr<Account> larrys_account;
     std::cout << "Program completed successfully" << std::endl;
     return 0;
 }
