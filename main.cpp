@@ -24,9 +24,16 @@ int main() {
         std::cout << *moes_account << std::endl;
         moes_account->withdraw(500.0);
         std::cout << *moes_account << std::endl;
-        moes_account->withdraw(1000.0);
+        moes_account->withdraw(1000.0); // dont except this to display
         std::cout << *moes_account << std::endl;
         
+    }
+       catch (const IllegalBalanceException &ex) // catch both exceptions
+    {
+        std::cerr << ex.what() << std::endl;
+    }
+    catch (const InsufficientFundsException &ex) {
+        std::cerr << ex.what() << std::endl;
     }
 
     std::cout << "Program completed successfully" << std::endl;
