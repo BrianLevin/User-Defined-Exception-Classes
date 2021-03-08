@@ -7,7 +7,7 @@ public:
     IllegalBalanceException() noexcept = default; // default constructor and garenteeing no exceptions being thrown
     ~IllegalBalanceException() = default; // default destructor
      virtual const char *what() const noexcept { //  virtual function called to makesure sure that the correct overridden function is caleld
-        return "Illegal balance exception";
+        return "Illegal balance exception"; // any kind of c style string called
     }
 };
 
