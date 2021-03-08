@@ -4,7 +4,7 @@
 class IllegalBalanceException: public std::exception 
 {
 public:
-    IllegalBalanceException() {}
+    IllegalBalanceException() noexcept = default; // default constructor and garenteeing no exceptions being thrown
     ~IllegalBalanceException() {}
 };
 
