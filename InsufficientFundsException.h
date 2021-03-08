@@ -8,7 +8,7 @@ virtual const char *what() const noexcept {
         return "Insufficient funds exception";
     }
 
-}
+};
 
 
 
